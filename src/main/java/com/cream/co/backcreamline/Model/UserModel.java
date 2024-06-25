@@ -1,4 +1,4 @@
-package Model;
+package com.cream.co.backcreamline.Model;
 
 public class UserModel {
     
