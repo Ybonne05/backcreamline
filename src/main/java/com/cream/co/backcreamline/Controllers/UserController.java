@@ -15,11 +15,11 @@ import com.cream.co.backcreamline.NotFoundException.UserNotFoundException;
 import com.cream.co.backcreamline.Repository.UserRepository;
 
 @RestController
-public class userController {
+public class UserController {
     
     final UserRepository repo;
 
-    public userController(UserRepository repo){
+    public UserController(UserRepository repo){
         this.repo = repo;
     }
 
