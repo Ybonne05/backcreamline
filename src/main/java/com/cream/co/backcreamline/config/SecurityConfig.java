@@ -16,10 +16,10 @@ import org.springframework.security.web.SecurityFilterChain;
 @EnableWebSecurity
 public class SecurityConfig {
 
-    private UserDetailsService UserDetailsService;
+    private UserDetailsService userDetailsService;
 
     public SecurityConfig(UserDetailsService userDetailsService) {
-        this.UserDetailsService = userDetailsService;
+        this.userDetailsService = userDetailsService;
     }
 
     @Bean

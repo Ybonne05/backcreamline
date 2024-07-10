@@ -102,7 +102,7 @@ public class UserAuthController {
             SecurityContextHolder.getContext().setAuthentication(authentication);
             return new ResponseEntity<>("User logged in successfully", HttpStatus.OK);    
         }catch(Exception e){
-            return new ResponseEntity<>("Invalid username or password", HttpStatus.UNAUTHORIZED);
+            return new ResponseEntity<>(e.toString(), HttpStatus.UNAUTHORIZED);
         }
     }
 
