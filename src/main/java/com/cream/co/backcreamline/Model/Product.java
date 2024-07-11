@@ -16,10 +16,11 @@ public class Product {
     
     Product(){}
 
-    public Product(String productName, String description, double price) {
+    public Product(String productName, String description, double price, String url) {
         this.productName = productName;
         this.description = description;
         this.price = price;
+        this.url = url;
     }
 
     public void setProductName(String productName) {
@@ -33,6 +34,10 @@ public class Product {
     public void setPrice(double price) {
         this.price = price;
     }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }    
 
     public Long getId() {
         return id;
@@ -54,5 +59,7 @@ public class Product {
         return price;
     }
 
-
+    public String getUrl() {
+        return url;
+    }    
 }
